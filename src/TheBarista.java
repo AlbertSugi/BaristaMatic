@@ -6,28 +6,31 @@ public class TheBarista {
 
 
     public static void main(String[] args) {
-        CoffeeMachine.initialize();
-        TheBarista.Baristastart();
+        CoffeeMachine Coffee = new CoffeeMachine();
+        TheBarista Barista = new TheBarista();
+        Coffee.initialize();
+        Barista.Baristastart();
         }
 
 
-    private static String Baristastart() {
-        CoffeeMachine.printIngredients();
-        CoffeeMachine.printDrinks();
+    private String Baristastart() {
+        CoffeeMachine Coffee = new CoffeeMachine();
+        Coffee.printIngredients();
+        Coffee.printDrinks();
         Scanner input = new Scanner(System.in);
         String reader = input.next();
         if (reader.equals("r") || reader.equals("R")) {
-            CoffeeMachine.Restock();
+            Coffee.Restock();
             return Baristastart();
         }
         else if (reader.equals("q") || reader.equals("Q")) {
-            CoffeeMachine.Exit();
+            Coffee.Exit();
         }
         else if (reader.equals("")||(reader.equals(" ")) ){
             return Baristastart();
         }
-        else if (CoffeeMachine.getIDs().contains(reader)){
-            CoffeeMachine.orderdrink(CoffeeMachine.getDrinkByID(reader));
+        else if (Coffee.getIDs().contains(reader)){
+            Coffee.orderdrink(Coffee.getDrinkByID(reader));
             return Baristastart();
         }
          System.out.println("Invalid selection:"+reader);
