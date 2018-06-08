@@ -3,9 +3,9 @@ import java.util.EnumSet;
 
 public class CoffeeMachine { //Everything needed to produce the selected drinks
     private static Inventory<Ingredients> ingdnt = new Inventory<Ingredients>();
-    private static EnumSet<Drink> Drinklist = EnumSet.allOf( Drink.class );
+    private EnumSet<Drink> Drinklist = EnumSet.allOf( Drink.class );
 
-    public static void initialize(){
+    public  void initialize(){
         for(Ingredients c : Ingredients.values()){
             ingdnt.put(c, 10);
         }
@@ -14,7 +14,7 @@ public class CoffeeMachine { //Everything needed to produce the selected drinks
 
     }
 
-    public static void printIngredients() {
+    public void printIngredients() {
         System.out.println("Inventory:");
         for (Ingredients t : Ingredients.values()) {
             if(!t.equals(Ingredients.none)){
@@ -22,17 +22,17 @@ public class CoffeeMachine { //Everything needed to produce the selected drinks
             }
         }
     }
-    public static void printDrinks(){
+    public void printDrinks(){
         System.out.println("Menu:");
         for(Drink c : Drink.values()){
             System.out.println(c.getDrinkId()+","+c.getDrinkName()+","+"$"+c.Drinkprice()+","+CoffeeMachine.availability(c));
         }
     }
 
-    public static void Restock(){
+    public void Restock(){
         ingdnt.restock();
     }
-    public static void Exit(){
+    public void Exit(){
         System.exit(0);
 
     }
@@ -44,7 +44,7 @@ public class CoffeeMachine { //Everything needed to produce the selected drinks
 
 
 
-    public static void orderdrink(Drink t) {
+    public void orderdrink(Drink t) {
         if(CoffeeMachine.availability(t)){
             System.out.println("Dispensing:"+t.getDrinkName());
             ingdnt.deduct(t.ingredient1(),t.getNeeded1());
@@ -58,13 +58,13 @@ public class CoffeeMachine { //Everything needed to produce the selected drinks
 
     }
 
-    public static Drink getDrinkByID(String id) {
+    public Drink getDrinkByID(String id) {
         for (Drink d: Drinklist) {
             if (d.getDrinkId().equals(id)) return d;
         }
         return null;
     }
-    public static ArrayList<String> getIDs()
+    public ArrayList<String> getIDs()
     {
         ArrayList<String> ids = new ArrayList<>();
         for (Drink d: Drinklist) {
