@@ -14,32 +14,32 @@ reflect current stock in the machine. Only drinks for which there is sufficient 
 
 Your BaristaMatic machine should be capable of dispensing the following drinks: 
 
-### Drink Name Ingredients<br/>
-Coffee 3 units of coffee, 1 unit of sugar, 1 unit of cream<br/>
-Decaf Coffee 3 units of Decaf Coffee, 1 unit of sugar, 1 unit of cream<br/>
-Caffe Latte 2 units of espresso, 1 unit of steamed milk<br/>
-Caffe Americano 3 units of espresso<br/>
-Caffe Mocha 1 units of Espresso, 1 unit of cocoa, 1 unit of steamed milk, 1 unit of whipped cream<br/>
-Cappuccino 2 units of Espresso, 1 unit of steamed milk, 1 unit of foamed milk<br/>
+* Drink Name Ingredients<br/>
+  Coffee 3 units of coffee, 1 unit of sugar, 1 unit of cream<br/>
+  Decaf Coffee 3 units of Decaf Coffee, 1 unit of sugar, 1 unit of cream<br/>
+  Caffe Latte 2 units of espresso, 1 unit of steamed milk<br/>
+  Caffe Americano 3 units of espresso<br/>
+  Caffe Mocha 1 units of Espresso, 1 unit of cocoa, 1 unit of steamed milk, 1 unit of whipped cream<br/>
+  Cappuccino 2 units of Espresso, 1 unit of steamed milk, 1 unit of foamed milk<br/>
 
-### Per-unit ingredient costs are as follows:
+* Per-unit ingredient costs are as follows:
 
-Ingredient    Unit Cost<br/>
-Coffee         $0.75<br/>
-Decaf Coffee   $0.75<br/>
-Sugar          $0.25<br/>
-Cream          $0.25<br/>
-Steamed Milk   $0.35<br/>
-Foamed Milk    $0.35<br/>
-Espresso       $1.10<br/>
-Cocoa          $0.90<br/>
-Whipped Cream  $1.00<br/>
+  Ingredient    Unit Cost<br/>
+  Coffee         $0.75<br/>
+  Decaf Coffee   $0.75<br/>
+  Sugar          $0.25<br/>
+  Cream          $0.25<br/>
+  Steamed Milk   $0.35<br/>
+  Foamed Milk    $0.35<br/>
+  Espresso       $1.10<br/>
+  Cocoa          $0.90<br/>
+  Whipped Cream  $1.00<br/>
 
 The BaristaMatic machine is capable of holding 10 units of each ingredient. At startup, the BaristaMatic should
 be fully stocked with all ingredients. Restocking the machine should restore the inventory of each ingredient to
 its fully-stocked state.
 
-## Input	Format: <br/>
+### Input	Format: <br/>
 Your solution should read from the standard input stream, one command per line. No prompts or other
 extraneous user messages should be displayed. Blank input lines should be ignored.
 ### Each valid command consists of a single character, as follows:<br/>
