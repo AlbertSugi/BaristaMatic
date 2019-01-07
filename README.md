@@ -5,6 +5,7 @@ combining these ingredients in different amounts. The cost of a drink is compute
 component ingredients.
 
 ## To Run the Application <br/>
+Go to TheBarista.java and click run
 
 ## Requirements <br/>
 Upon startup, the BaristaMatic should display its current inventory, followed by a menu to allow the user to select
