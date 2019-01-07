@@ -93,9 +93,9 @@ Menu:<br/>
 4,Cappuccino,$2.90,true<br/>
 5,Coffee,$2.75,true<br/>
 6,Decaf Coffee,$2.75,true<br/>
-For input consisting of the following commands:<br/>
-2<br/>
-q<br/>
+### For input consisting of the following commands:<br/>
+### 2<br/>
+### q<br/>
 ### the program would produce the following output (including the startup output):<br/>
 Inventory:<br/>
 Cocoa,10<br/>
