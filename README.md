@@ -52,6 +52,7 @@ Invalid selection: (characters that were entered)<br/>
 Dispensing: (drink name)<br/>
 #### On the other hand, if the drink order cannot be completed, then the program should display a single-line message with the following format:<br/>
 Out of stock: (drink name)<br/>
+
 The inventory and menu should be displayed immediately, one after the other, following any
 applicable message.<br/>
 
