@@ -75,7 +75,7 @@ Note: the sample output is indented in these instructions to make it easier to r
 program should not have any whitespace at the beginning of a line.
 
 ## Example:<br/>
-Upon application startup, the initial inventory list and drink menu would look like this:<br/>
+### Upon application startup, the initial inventory list and drink menu would look like this:<br/>
 Inventory:<br/>
 Cocoa,10<br/>
 Coffee,10<br/>
@@ -96,7 +96,7 @@ Menu:<br/>
 For input consisting of the following commands:<br/>
 2<br/>
 q<br/>
-the program would produce the following output (including the startup output):<br/>
+### the program would produce the following output (including the startup output):<br/>
 Inventory:<br/>
 Cocoa,10<br/>
 Coffee,10<br/>
