@@ -46,15 +46,14 @@ extraneous user messages should be displayed. Blank input lines should be ignore
 • 'R' or 'r' - restock the inventory and redisplay the menu<br/>
 • 'Q' or 'q' - quit the application<br/>
 • [1-6] - order the drink with the corresponding number in the menu<br/>
-#### If the user enters an invalid command, then the program should display a single-line message with the following format:<br/>
+#### * If the user enters an invalid command, then the program should display a single-line message with the following format:<br/>
 Invalid selection: (characters that were entered)<br/>
-#### If the user selects a valid drink number, and the machine has sufficient ingredients on hand to make the drink, then the program should display a single-line message with the following format:<br/>
+#### * If the user selects a valid drink number, and the machine has sufficient ingredients on hand to make the drink, then the program should display a single-line message with the following format:<br/>
 Dispensing: (drink name)<br/>
-#### On the other hand, if the drink order cannot be completed, then the program should display a single-line message with the following format:<br/>
+#### * On the other hand, if the drink order cannot be completed, then the program should display a single-line message with the following format:<br/>
 Out of stock: (drink name)<br/>
 
-The inventory and menu should be displayed immediately, one after the other, following any
-applicable message.<br/>
+#### * The inventory and menu should be displayed immediately, one after the other, following any applicable message.<br/>
 
 ## Output	Format:<br/>
 All output should be written to the standard output stream. At program startup, and following the processing of
